@@ -1,7 +1,7 @@
 # Event Demultiplexing
 
 ## Description
-Demo explain how to implement event deuxing usecase using DLT declarative framework 
+Demo explain how to implement event demuxing usecase using DLT declarative framework 
 
 ## Setup
 ### Prerequisites
