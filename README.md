@@ -14,3 +14,7 @@ Demo explain how to implement event deuxing usecase using DLT declarative framew
 - Run the "Step2 install_topic_pipeline_allocation" notebook to create a new pipeline and allocate new topics to the newly created pipeline or existing pipeline.
 - Execute the pipeline from the workspace UI once the new pipeline is installed.
 - Finally, run the "Step3 cleanup_resources" notebook to release all resources created during the demo execution.
+### Document references
+- DLT  - https://docs.databricks.com/aws/en/dlt/
+- FLOWS - https://docs.databricks.com/aws/en/dlt/flows
+- SINK - https://docs.databricks.com/aws/en/dlt/dlt-sinks
