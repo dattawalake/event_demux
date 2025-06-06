@@ -3,6 +3,14 @@
 ## Description
 Demo explain how to implement event demuxing usecase using DLT declarative framework 
 
+## Important
+Important information about Private Preview : some features used in demo are in private preview
+
+- A product in either of these preview phases is not intended for use in production and is provided AS-IS consistent with your agreement with Databricks.
+- Non-public information about the preview is confidential.
+- We may change or discontinue the preview at any time without notice. We may also choose not to make the preview generally commercially available.
+- These preview phases are not included in the SLA and do not have formal support. If you have questions or feedback, reach out to your Databricks contact.
+- During Private Preview, Databricks may collect and use data relating to this feature, such as inputs and outputs, to develop and test the feature.
 ## Setup
 ### Prerequisites
 - A functioning event system (e.g., Kafka) with appropriate access permissions.
