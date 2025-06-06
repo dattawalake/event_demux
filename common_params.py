@@ -25,13 +25,13 @@ spark.sql(f"create schema if not exists {catalog}.{schema}")
 
 # DBTITLE 1,Set Widgets for Pipeline Streams and AWS Profile
 dbutils.widgets.text("streams_per_pipeline", "5")
-dbutils.widgets.text("instance_profile_arn", "arn:aws:iam::997819012307:instance-profile/one-env-databricks-access")
+dbutils.widgets.text("instance_profile_arn", "<arn>")
 
 # COMMAND ----------
 
 # DBTITLE 1,Configure Kafka Server and Event Types for Processing
 # Retrieve the Kafka bootstrap server address from Databricks secrets, replace with your own parameters
-KAFKA_SERVER = dbutils.secrets.get("oetrta", "kafka-bootstrap-servers-plaintext")
+KAFKA_SERVER = dbutils.secrets.get("<secret_key>", "<default value>")
 
 streams_per_pipeline = int(dbutils.widgets.get("streams_per_pipeline"))
 instance_profile_arn = dbutils.widgets.get("instance_profile_arn")
