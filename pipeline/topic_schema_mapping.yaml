@@ -1,0 +1,54 @@
+adClick:
+  schemahint: adId string, advertiserId string, attributionData struct<clickId:string,conversionId:string,conversionTime:string,conversionValue:string>,
+    campaignId string, contextData struct<placementId:string,publisherId:string,referrerUrl:string>,
+    deviceInfo struct<browser:string,ipAddress:string,os:string,type:string>, engagementData
+    string, error_code string, eventId string, eventType string, locationData struct<city:string,country:string,region:string>,
+    metrics struct<bidPrice:double,chargedAmount:double,loadTime:bigint,viewabilityScore:double>,
+    timestamp bigint, userId string
+  type: topic_based
+adConversion:
+  schemahint: adId string, advertiserId string, attributionData struct<clickId:string,conversionId:string,conversionTime:bigint,conversionValue:double>,
+    campaignId string, contextData struct<placementId:string,publisherId:string,referrerUrl:string>,
+    deviceInfo struct<browser:string,ipAddress:string,os:string,type:string>, engagementData
+    string, error_code string, eventId string, eventType string, locationData struct<city:string,country:string,region:string>,
+    metrics string, timestamp bigint, userId string
+  type: topic_based
+adEngagement:
+  schemahint: adId string, advertiserId string, attributionData string, campaignId
+    string, contextData struct<placementId:string,publisherId:string,referrerUrl:string>,
+    deviceInfo struct<browser:string,ipAddress:string,os:string,type:string>, engagementData
+    struct<engagementTime:bigint,engagementType:string>, error_code string, eventId
+    string, eventType string, locationData struct<city:string,country:string,region:string>,
+    metrics string, timestamp bigint, userId string
+  type: topic_based
+adImpression:
+  schemahint: adId string, advertiserId string, attributionData string, campaignId
+    string, contextData struct<placementId:string,publisherId:string,referrerUrl:string>,
+    deviceInfo struct<browser:string,ipAddress:string,os:string,type:string>, engagementData
+    string, error_code string, eventId string, eventType string, locationData struct<city:string,country:string,region:string>,
+    metrics struct<bidPrice:double,chargedAmount:double,loadTime:bigint,viewabilityScore:double>,
+    timestamp bigint, userId string
+  type: topic_based
+adView:
+  schemahint: adId string, advertiserId string, attributionData string, campaignId
+    string, contextData struct<placementId:string,publisherId:string,referrerUrl:string>,
+    deviceInfo struct<browser:string,ipAddress:string,os:string,type:string>, engagementData
+    string, error_code string, eventId string, eventType string, locationData struct<city:string,country:string,region:string>,
+    metrics struct<bidPrice:double,chargedAmount:double,loadTime:bigint,viewabilityScore:double>,
+    timestamp bigint, userId string
+  type: topic_based
+all_adevents:
+  event_type:
+  - adClick
+  - adImpression
+  - adConversion
+  - adView
+  - adEngagement
+  schemahint: adId string, advertiserId string, attributionData struct<clickId:string,conversionId:string,conversionTime:bigint,conversionValue:double>,
+    campaignId string, contextData struct<placementId:string,publisherId:string,referrerUrl:string>,
+    deviceInfo struct<browser:string,ipAddress:string,os:string,type:string>, engagementData
+    struct<engagementTime:bigint,engagementType:string>, error_code string, eventId
+    string, eventType string, locationData struct<city:string,country:string,region:string>,
+    metrics struct<bidPrice:double,chargedAmount:double,loadTime:bigint,viewabilityScore:double>,
+    timestamp bigint, userId string
+  type: payload_based
